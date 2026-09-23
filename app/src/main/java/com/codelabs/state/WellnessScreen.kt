@@ -42,5 +42,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 fun WellnessScreen(modifier: Modifier = Modifier) {
-    WaterCounterStateful()
+    Column(modifier = modifier) {
+        WaterCounterStateful()
+        WellnessTasksList()
+    }
 }
